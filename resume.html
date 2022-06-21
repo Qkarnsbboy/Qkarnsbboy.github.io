@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Resume page of Quincy's Personal Website. Features an iFrame of Quincy's resume in PDF form.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+	<title>Resume</title>
+	<style>
+		.iframeDiv {
+			width: auto;
+		}
+
+		.iframeChildDiv {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 7%;
+			margin-left: 25%;
+			margin-right: 25%;
+			margin-bottom: 10%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- Header Div -->
+	<div id="headerDiv" class="container">
+		<div> <a class="btn btn-primary" href="contact.html" role="button">Contact</a> </div>
+		<div> <a class="btn btn-primary" href="projects.html" role="button">Projects</a> </div>
+		<div> <a class="btn btn-primary" href="resume.html" role="button">Resume</a> </div>
+		<div> <a class="btn btn-primary" href="home.html" role="button">Home</a> </div>
+	</div>
+
+
+	<!-- Iframe Div -->
+	<div class=iframeDiv>
+
+		<div class=iframeChildDiv id="iframeDiv"> 
+			<h2> Resume 💼 </h2>
+			<iframe src="img/Resume.pdf" title="resume" width="1200" height="800"> </iframe>
+		</div>
+		
+	</div>
+
+	<!-- Optional JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
